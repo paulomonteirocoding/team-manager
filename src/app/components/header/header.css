@@ -1,0 +1,42 @@
+.brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.brand img {
+  display: block;
+  height: 100px;
+  align-self: baseline;
+  margin: 5px;
+}
+
+nav {
+  width: 100%;
+  padding: 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: baseline;
+}
+
+nav button {
+  background: none;
+  border: none;
+  padding: 5px;
+  margin-right: 2px;
+}
+
+nav button:hover{
+  background-color: rgb(224, 255, 255);
+}
+
+nav button:last-child{
+  margin: none;
+}
+
+nav button:active {
+  box-shadow: 0 1px 1px red;
+  background-color: rgba(224, 255, 255, 0.1)
+}

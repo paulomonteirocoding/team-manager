@@ -7,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrl: './app.css'
 })
 export class App {
-  protected title = 'team-manager';
+  menu = [
+    {
+      path:'',
+      name:'Home'
+    },
+    {
+      path:'register',
+      name:'Register'
+    },
+  ]
 }

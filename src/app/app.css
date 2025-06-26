@@ -1,0 +1,16 @@
+app-header, app-footer{
+  width: 100%;
+  display: flex;
+  flex: 0 0 auto;
+  background-color: wheat;
+}
+
+main{
+  background-color: blueviolet;
+  flex: 1 1 auto;
+  width: 100%;
+}
+
+app-header {
+  flex-direction: column;
+}

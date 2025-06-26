@@ -1,0 +1,27 @@
+<form (ngSubmit)="onSubmit()" [formGroup]="form">
+  <label>
+    Nome:
+    <input type="text" formControlName="name">
+  </label>
+  <div *ngIf="form.get('name')?.touched && form.get('name')?.invalid">
+    Nome é obrigatório
+  </div>
+
+  <label>
+    Email:
+    <input type="email" formControlName="email">
+  </label>
+  <div *ngIf="form.get('email')?.touched && form.get('email')?.invalid">
+    Email inválido
+  </div>
+
+  <label>
+    Password:
+    <input type="password" formControlName="password">
+  </label>
+  <div *ngIf="form.get('password')?.touched && form.get('password')?.invalid">
+    Password com pelo menos 6 caracteres
+  </div>
+
+  <button type="submit">Submeter</button>
+</form>
